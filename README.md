@@ -32,23 +32,6 @@ The dataset contains multiple medical attributes such as **age, cholesterol leve
 - **Hyperparameter tuning** using Grid Search and Random Search.
 - **Batch normalization & dropout layers** to prevent overfitting in neural networks.
 
-## **Installation & Setup**
-### **1. Clone the Repository**
-```bash
-git clone https://github.com/your-repository/heart-disease-prediction.git
-cd heart-disease-prediction
-```
-
-### **2. Install Dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-### **3. Run the Jupyter Notebook**
-```bash
-jupyter notebook Heart_disease_FP.ipynb
-```
-
 ## **Usage**
 - Open the Jupyter Notebook (`Heart_disease_FP.ipynb`).
 - Run each cell sequentially to preprocess data, train models, and evaluate performance.
