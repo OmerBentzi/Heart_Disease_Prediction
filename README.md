@@ -74,23 +74,5 @@ PCA Impact: Reduced features from 23 to 10, retaining 95% variance, cutting trai
 SMOTE Impact: Increased Class 2 recall from 58% to 79%, enhancing minority class detection.
 Detailed results, including confusion matrices and statistical analyses, are available in docs/final_paper.md.
 
-Contributing
-We welcome contributions to enhance this project! To contribute:
 
-Fork the repository.
-Create a feature branch (git checkout -b feature-branch).
-Commit your changes (git commit -m "Add feature X").
-Push to the branch (git push origin feature-branch).
-Open a Pull Request.
-Please adhere to PEP 8 style guidelines and include comments or documentation for clarity.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Acknowledgments
-UCI Machine Learning Repository for providing the Heart Disease UCI Dataset.
-Afeka College of Engineering for academic guidance and resources.
-Open-Source Community for tools like scikit-learn, TensorFlow, and imblearn that made this work possible.
-Contact
-For inquiries, feedback, or collaboration opportunities, please contact:
 
