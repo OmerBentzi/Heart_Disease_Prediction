@@ -4,7 +4,7 @@
 This project focuses on **predicting heart disease severity** using **Machine Learning (ML) and Deep Learning (DL)** techniques. The model is trained on the **UCI Heart Disease Dataset** and applies advanced preprocessing, hyperparameter tuning, and feature selection techniques to improve accuracy.
 
 ## **Dataset**
-The dataset contains multiple medical attributes such as **age, cholesterol levels, chest pain type, blood pressure, exercise-induced angina, and more**. The target variable is a **multi-class classification label (0 - No Disease, 1 - Mild, 2 - Severe)**.
+The dataset contains multiple medical attributes such as **age, cholesterol levels, chest pain type, blood pressure, exercise-induced angina, and more**. The target variable is a **multi-class classification label (0 - No Disease, 1 - Mild, 2 - Severe)**
 
 ## **Models Implemented**
 - **Machine Learning Models:**
