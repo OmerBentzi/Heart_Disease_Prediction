@@ -1,78 +1,78 @@
-Enhancing Multi-Class Classification for Heart Disease Prediction
+# **Heart Disease Prediction - README**
 
-Authors: Roei Aviv & Omer Ben Simon
+## **Project Overview**
+This project focuses on **predicting heart disease severity** using **Machine Learning (ML) and Deep Learning (DL)** techniques. The model is trained on the **UCI Heart Disease Dataset** and applies advanced preprocessing, hyperparameter tuning, and feature selection techniques to improve accuracy.
 
-Affiliation: MSc in Intelligent Systems, Afeka College of Engineering, Tel Aviv, Israel
+## **Dataset**
+The dataset contains multiple medical attributes such as **age, cholesterol levels, chest pain type, blood pressure, exercise-induced angina, and more**. The target variable is a **multi-class classification label (0 - No Disease, 1 - Mild, 2 - Severe)**.
 
+## **Models Implemented**
+- **Machine Learning Models:**
+  - Decision Tree Classifier
+  - Support Vector Machine (SVM)
+  - Logistic Regression
+- **Deep Learning Models:**
+  - Multi-Layer Perceptron (MLP)
+  - Optimized Neural Network (Tuned MLP)
 
-Project Overview
-This repository contains the code, data, and documentation for a research project focused on improving multi-class classification for heart disease prediction using Machine Learning (ML) and Deep Learning (DL) techniques. The study compares traditional ML models—Decision Trees, Support Vector Machines (SVM), and Logistic Regression—with an optimized Multi-Layer Perceptron (MLP) Neural Network, leveraging the Heart Disease UCI Dataset. Key enhancements include Principal Component Analysis (PCA) for dimensionality reduction, Synthetic Minority Oversampling Technique (SMOTE) for class balancing, and hyperparameter tuning, achieving a peak accuracy of 82.15%.
+## **Key Techniques Used**
+### **1. Data Preprocessing**
+- Handling missing values using median imputation.
+- Feature encoding (One-hot encoding for categorical variables).
+- Min-max scaling for numerical features.
 
-Objectives
-Assess baseline vs. optimized performance of ML and DL models.
-Implement PCA and SMOTE to mitigate feature redundancy and class imbalance.
-Develop a scalable, AI-driven framework for cardiovascular diagnostics.
-Key Results
-Optimized MLP: 82.15% accuracy, with F1-scores of 86% (Class 0), 79% (Class 1), and 80% (Class 2).
-Baseline Comparison: Outperformed ML models (68–73% accuracy) by up to 14%.
-Statistical Validation: Significant improvements confirmed via paired t-tests (e.g., MLP: p = 0.005).
+### **2. Feature Engineering & Selection**
+- **Principal Component Analysis (PCA)** to reduce dimensionality while preserving variance.
+- **Correlation Analysis** to remove redundant features.
 
+### **3. Data Balancing**
+- **Synthetic Minority Over-sampling Technique (SMOTE)** to address class imbalance.
 
-Dataset
-The project utilizes the Heart Disease UCI Dataset:
+### **4. Model Optimization**
+- **Hyperparameter tuning** using Grid Search and Random Search.
+- **Batch normalization & dropout layers** to prevent overfitting in neural networks.
 
-Size: 920 instances
-Features: 13 predictive attributes, including:
-Numerical: age, resting blood pressure (trestbps), cholesterol (chol), maximum heart rate (thalch), ST depression (oldpeak), number of major vessels (ca)
-Categorical: sex, chest pain type (cp), fasting blood sugar (fbs), resting ECG (restecg), exercise-induced angina (exang), slope, thalassemia (thal)
-Target: Multi-class label (0: No Disease, 1: Mild Disease, 2: Severe Disease)
-Class Distribution: 411 (Class 0), 265 (Class 1), 109 (Class 2)
-Source: UCI Machine Learning Repository
-The dataset is provided in the data/ directory as heart_disease_uci.csv.
+## **Installation & Setup**
+### **1. Clone the Repository**
+```bash
+git clone https://github.com/your-repository/heart-disease-prediction.git
+cd heart-disease-prediction
+```
 
-Prerequisites
-Python Version: 3.8 or higher
-Dependencies: Specified in requirements.txt. Key libraries include:
-pandas (data manipulation)
-scikit-learn (ML models, preprocessing, evaluation)
-tensorflow or keras (Neural Networks)
-imblearn (SMOTE implementation)
-numpy (numerical operations)
-matplotlib and seaborn (visualization)
+### **2. Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
 
+### **3. Run the Jupyter Notebook**
+```bash
+jupyter notebook Heart_disease_FP.ipynb
+```
 
-Usage
-Running the Analysis
-Open notebooks/heart_disease_analysis.ipynb in Jupyter Notebook or JupyterLab to explore the dataset, train models, and visualize results.
-Follow the notebook’s sequential steps:
-Load and preprocess the dataset.
-Train baseline models.
-Apply PCA and SMOTE, then train optimized models.
-Evaluate and compare performance metrics.
-Preprocessing and Modeling
-Preprocessing: Use src/preprocess.py to handle missing values, encode categorical variables, normalize data, and balance classes with SMOTE.
-Modeling: Implement models via src/models.py, which includes Decision Trees, SVM, Logistic Regression, and MLP definitions along with training routines.
-Optimization: Apply PCA and hyperparameter tuning with src/optimize.py.
-Example Workflow
-Load heart_disease_uci.csv and preprocess it (imputation, encoding, scaling, SMOTE).
-Train baseline models and record performance.
-Reduce dimensions with PCA, balance data with SMOTE, and retrain optimized models.
-Generate metrics (accuracy, precision, recall, F1-score) and visualizations (e.g., confusion matrices).
-Results Summary
-Baseline Performance:
-Decision Tree: 71.01% accuracy
-SVM: 68.12% accuracy
-Logistic Regression: 71.74% accuracy
-MLP: 73.12% accuracy
-Optimized Performance:
-Decision Tree: 75.51% accuracy (F1: 78%, 72%, 73%)
-SVM: 71.92% accuracy (F1: 75%, 68%, 70%)
-Logistic Regression: 76.94% accuracy (F1: 79%, 74%, 75%)
-MLP: 82.15% accuracy (F1: 86%, 79%, 80%)
-Statistical Significance: Paired t-tests showed significant improvements (e.g., Decision Tree: p = 0.032; MLP: p = 0.005).
-PCA Impact: Reduced features from 23 to 10, retaining 95% variance, cutting training time by 30%.
-SMOTE Impact: Increased Class 2 recall from 58% to 79%, enhancing minority class detection.
-Detailed results, including confusion matrices and statistical analyses, are available in docs/final_paper.md.
+## **Usage**
+- Open the Jupyter Notebook (`Heart_disease_FP.ipynb`).
+- Run each cell sequentially to preprocess data, train models, and evaluate performance.
+- Modify hyperparameters and dataset balancing techniques for further experimentation.
 
+## **Results Summary**
+| Model | Accuracy |
+|--------|---------|
+| Decision Tree | 71.01% |
+| SVM | 68.12% |
+| Logistic Regression | 71.74% |
+| Baseline Neural Network | 73.12% |
+| Tuned Neural Network | 78.34% |
+| Optimized Neural Network | 82.15% |
 
+## **Future Work**
+- Implement **CNN and Transformer-based architectures** for further improvements.
+- Apply **Explainable AI (XAI)** techniques to interpret model decisions.
+- Explore **real-world deployment** in medical diagnosis applications.
+
+## **Contributors**
+- **Roei Aviv** (Afeka College, MSc in Intelligent Systems)
+- **Omer Ben Simon** (Afeka College, MSc in Intelligent Systems)
+
+## **License**
+This project is licensed under the **MIT License**.
 
