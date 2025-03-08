@@ -1,13 +1,9 @@
 Enhancing Multi-Class Classification for Heart Disease Prediction
 
-
-Authors: Roei Aviv (314753427) & Omer Ben Simon (323023010)
+Authors: Roei Aviv & Omer Ben Simon
 
 Affiliation: MSc in Intelligent Systems, Afeka College of Engineering, Tel Aviv, Israel
 
-Email: roeiaviv@afeka.ac.il, omerbensimon@afeka.ac.il
-
-Date: March 08, 2025
 
 Project Overview
 This repository contains the code, data, and documentation for a research project focused on improving multi-class classification for heart disease prediction using Machine Learning (ML) and Deep Learning (DL) techniques. The study compares traditional ML models—Decision Trees, Support Vector Machines (SVM), and Logistic Regression—with an optimized Multi-Layer Perceptron (MLP) Neural Network, leveraging the Heart Disease UCI Dataset. Key enhancements include Principal Component Analysis (PCA) for dimensionality reduction, Synthetic Minority Oversampling Technique (SMOTE) for class balancing, and hyperparameter tuning, achieving a peak accuracy of 82.15%.
@@ -20,26 +16,8 @@ Key Results
 Optimized MLP: 82.15% accuracy, with F1-scores of 86% (Class 0), 79% (Class 1), and 80% (Class 2).
 Baseline Comparison: Outperformed ML models (68–73% accuracy) by up to 14%.
 Statistical Validation: Significant improvements confirmed via paired t-tests (e.g., MLP: p = 0.005).
-Repository Structure
-text
 
-Collapse
 
-Wrap
-
-Copy
-├── data/
-│   └── heart_disease_uci.csv    # Heart Disease UCI Dataset
-├── docs/
-│   └── final_paper.md          # Full academic paper in Markdown format
-├── notebooks/
-│   └── heart_disease_analysis.ipynb  # Jupyter Notebook with data exploration and modeling
-├── src/
-│   ├── preprocess.py           # Data preprocessing functions (imputation, encoding, SMOTE)
-│   ├── models.py               # Model definitions and training routines
-│   └── optimize.py             # Optimization functions (PCA, Grid Search)
-├── requirements.txt            # Python dependencies
-└── README.md                   # This file
 Dataset
 The project utilizes the Heart Disease UCI Dataset:
 
@@ -61,36 +39,8 @@ tensorflow or keras (Neural Networks)
 imblearn (SMOTE implementation)
 numpy (numerical operations)
 matplotlib and seaborn (visualization)
-Installation
-Clone the Repository:
-bash
 
-Collapse
 
-Wrap
-
-Copy
-git clone https://github.com/yourusername/heart-disease-prediction.git
-cd heart-disease-prediction
-Set Up a Virtual Environment (Recommended):
-bash
-
-Collapse
-
-Wrap
-
-Copy
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install Dependencies:
-bash
-
-Collapse
-
-Wrap
-
-Copy
-pip install -r requirements.txt
 Usage
 Running the Analysis
 Open notebooks/heart_disease_analysis.ipynb in Jupyter Notebook or JupyterLab to explore the dataset, train models, and visualize results.
@@ -144,20 +94,3 @@ Open-Source Community for tools like scikit-learn, TensorFlow, and imblearn that
 Contact
 For inquiries, feedback, or collaboration opportunities, please contact:
 
-Roei Aviv: roeiaviv@afeka.ac.il
-Omer Ben Simon: omerbensimon@afeka.ac.il
-Instructions for Use
-Save the File: Copy the text above into a file named README.md.
-Customize Placeholders:
-Replace yourusername in the git clone URL with your actual GitHub username.
-Update file names (e.g., heart_disease_analysis.ipynb) if they differ in your repository.
-Add a LICENSE file if you want to include the MIT License text (optional; GitHub can generate it).
-Upload to GitHub:
-Create a new repository on GitHub (e.g., "heart-disease-prediction").
-Upload this README.md along with your project files (data/, docs/, notebooks/, src/, requirements.txt).
-Commit and push to make it live.
-Additional Tips
-Requirements.txt: If you haven’t created it yet, install the libraries locally and run pip freeze > requirements.txt to generate it.
-Paper File: Convert your final academic paper to Markdown (final_paper.md) or include it as a PDF if preferred.
-Visuals: Add screenshots or plots (e.g., confusion matrices) to the README by uploading them to the repo and linking them with ![Image](path/to/image.png).
-Let me know if you need help with any specific part of the upload process!
